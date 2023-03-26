@@ -1,0 +1,18 @@
+.card_image{
+    width: 100%;
+    height: 40vh;
+    object-fit: contain;
+
+}
+
+.title{
+    height: 40%;
+    padding: 5px;
+    color:red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price{
+    border: 2px solid red;
+}
