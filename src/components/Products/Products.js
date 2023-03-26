@@ -9,16 +9,16 @@ const Products = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
-   
-    console.log("products",products)
+      
     return (
         <div className='row'>
-        <div className="col-12 col-md-9">
-            <div className='row'>
-                {products.map(product=> <Product product={product} key={product.id} ></Product>)}
+            <div className="col-12 col-md-9">
+                <div className='row'>
+                    {products.map(product=> <Product product={product} key={product.id} ></Product>)}
+                </div>
             </div>
-        </div>
-            <ShoppingCart></ShoppingCart>
+            
+            <ShoppingCart products={products}></ShoppingCart>
         </div>
     );
 };
